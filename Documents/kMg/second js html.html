@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <style>
+body{
+    background-color: lightblue;
+}
+h1{font-family: 'Times New Roman', Times, serif; 
+text-align: center;}
+</style>
+<body>
+<Title>
+Testing
+</Title>
+
+<h1>
+    Sorting Numbers
+   </h1>
+
+<p> 
+   Click the "Show Numbers" buttton to display numbers.
+</p>
+
+<button onclick="myFun()">Show Numbers</button>
+
+<button onclick="myF()">Sort.</button>
+
+
+<p id = "demo1"></p>
+
+<p id = "demo2"></p>
+
+<script>
+    var n = [3,1,15,4]
+
+    function myFun(){
+    
+    document.getElementById("demo1").innerHTML = n;
+    }
+
+    function myF(){
+    n.sort(function(a, b){return a - b});
+    
+    document.getElementById("demo2").innerHTML = n;
+    }
+</script>
+
+
+</body>
+</html>
