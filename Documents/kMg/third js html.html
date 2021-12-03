@@ -35,24 +35,24 @@ Testing
 <p id = "demo2"></p>
 <p2 id = "demo3"></p2>
 <script>
-    var n = [3,1,15,4]
+     var numbers = [30, 12, 1, 35, 45, 4, 2, 9 , 23];
 
     function myFun(){
     
-    document.getElementById("demo1").innerHTML = n;
+    document.getElementById("demo1").innerHTML = numbers;
     }
 
     function myF(){
-    n.sort(function(a, b){return a - b});
+    numbers.sort(function(a, b){return a - b});
     
-    document.getElementById("demo2").innerHTML = n;
+    document.getElementById("demo2").innerHTML = numbers;
     }
     function myfff(){
-        var numbers = [30, 12, 1, 35, 45, 4, 2, 9 , 23];
+       
 var highest = 0;
 
-for (let index = 0; index < 9; index++) {
-    highest = numbers[0];
+for (let index = 0; index < 8; index++) {
+    //highest = numbers[index];
 
     if(numbers[index + 1] > highest)
     {
