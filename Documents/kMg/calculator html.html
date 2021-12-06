@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+<title> CAlculator</title>
+
+<h1>
+
+select an operation to perform:
+</h1>
+<body>
+<p1>1.ADD</p1>
+<p2>2.SUBTRACT</p2>
+<p3>3.MULTIPLY</p3>
+<p4>4.DIVIDE</p4>
+
+<script>
+var operation;
+//operation = window.prompt("operation");
+//alert(operation);
+
+if (operation == "1"){
+   var num1
+   num1 = window.promt("enter first number: ");
+    var num2; 
+    num2 = window.promt("enter second number: ");
+    document.getElementById("demo").innerHTML = num1 + num2;
+
+}
+else if (operation = "2"){
+   var num1;
+   num1 = window.prompt('enter first number: ')
+   var num2;
+   num2 = window.prompt('enter second number: ')
+   document.getElementById("demo").innerHTML = num1 + num2;
+    }
+else if (operation = "3")
+{
+ let num1; 
+ num1 = window.prompt('enter first number: ')
+   let num2;
+   num2 = window.prompt('enter second number: ')
+   document.getElementById("demo").innerHTML ="the sum is" + num1 + num2;
+}
+else if (operation = "4")
+{
+  let num1; 
+  num1 = window.prompt('enter first number: ')
+   let num2; 
+   num2 = input('enter second number: ')
+ var  sum = num1 + num2;
+  sum =  document.getElementById("demo").innerHTML;
+}
+
+else{
+    alert ('invalid entry')
+}
+</script>
+</body>
+</html>
